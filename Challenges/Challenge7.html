@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Square a Number</title>
+    </head>
+    <body>
+        <h2>Enter a number to square:</h2>
+        <input type="number" id="numberInput" placeholder="Your number here">
+        <button onclick="squareNumber()">Square It!</button>
+    
+        <script>
+        function square() {
+        let number = document.getElementById("numberInput").value;
+        if(number == "") {
+          alert("Please enter a number first!");
+        } else {
+          alert("The square is " + (number * number) + "!");
+        }
+        }
+        </script>
+    </body>
+</html>
