@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Toggle Dark Mode Example</title>
+  <style>
+    
+    body {
+      background-color: white;
+      color: black;
+      font-family: sans-serif;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    
+    body.dark-mode {
+      background-color: #121212;
+      color: white;
+    }
+
+    
+    
+
+    body.dark-mode #darkModeBtn {
+      background-color: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <button id="darkModeBtn">Toggle Dark Mode</button>
+
+  
+  
+
+  <script>
+    const toggleButton = document.getElementById("darkModeBtn");
+    toggleButton.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+    });
+  </script>
+</body>
+</html>

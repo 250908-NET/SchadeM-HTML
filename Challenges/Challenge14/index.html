@@ -1,0 +1,19 @@
+<div id="container">
+  <ul>  </ul>
+</div>
+
+<button id="Btn">ADD ITEM</button>
+
+<script>
+  let container = document.getElementById("container");
+  let number = 0;
+
+  function addItem() {
+    number++;
+    let newItem = document.createElement("li");
+    newItem.textContent = "Added Item "+ number;
+    container.appendChild(newItem);
+  }
+
+  document.getElementById("Btn").addEventListener("click", addItem);
+</script>

@@ -1,0 +1,20 @@
+<img id="myImage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/960px-Cat_November_2010-1a.jpg" alt="Cat">
+
+<button id="Btn">Click to swap image</button>
+
+<script>
+
+  let img = document.getElementById("myImage");
+
+  function changeImage() {
+
+    if(img.alt.includes("Dog")) {
+      img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/960px-Cat_November_2010-1a.jpg";
+      img.alt = "Cat";
+    } else if (img.alt.includes("Cat")) {
+      img.src = "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*";
+      img.alt = "Dog";
+    }
+  }
+  document.getElementById("Btn").addEventListener("click", changeImage);
+</script>
