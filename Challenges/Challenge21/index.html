@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<h1> Add A Book</h1>
+<input type="text" id="input1" placeholder="book">
+<input type="text" id="input2" placeholder="author">
+<button id="BookButton">Add</button>
+<body>
+  
+  <pre id="output"></pre>
+
+  <script>
+    
+    const makeBook = (title, author) => ({ title, author });
+
+    document.getElementById("BookButton").addEventListener("click", function() {
+        const book = makeBook("book", "Author");
+        console.log(book);
+
+    
+        document.getElementById("output").textContent = JSON.stringify(book, null, 2);
+    });
+  </script>
+</body>
+</html>
