@@ -1,0 +1,11 @@
+<p id="message">This is a button.</p>
+
+<button id="Btn">Button</button>
+
+<script>
+  function changeMessage() {
+    let message = document.getElementById("message");
+    message.textContent = "You clicked the button!";
+  }
+  document.getElementById("Btn").addEventListener("click", changeMessage);
+</script>
